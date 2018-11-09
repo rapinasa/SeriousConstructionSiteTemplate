@@ -1,0 +1,263 @@
+
+*{
+	
+	
+	margin: 10px;
+	padding: 0;
+
+}
+
+
+
+.slideshow-container{
+	
+	
+	margin:0 auto;
+	padding:0;
+	position: relative;
+	max-width: 100%;
+
+	}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.leftSide a {
+	text-decoration: none;
+	position: absolute;
+	display: block;
+	line-height: 10px;
+	top:100px;
+	left:100px;
+	color:black;
+}
+.leftSide span{
+	font-size: 50px;
+	font-family: Helvetica;
+}
+.leftSide p{
+	font-size: 20px;
+	font-family: Helvetica;
+	text-align: center;
+}
+.rightSide{
+	position: absolute;
+	top:170px;
+	right:80px;
+}
+.rightSide a {
+  background-image: url(http://www.webmasters.by/images/articles/css-social-buttons/social-icons-preview.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+ cursor: pointer;
+ border-radius: 10px;
+}
+.rightSide .fb{
+	background-position:-72px -40px;
+}
+
+.rightSide .tw{
+	background-position:-35px -40px;
+}
+
+.rightSide .linkdn{
+	background-position:-147px -40px;
+}
+
+.fb:hover{
+	background-position:-75px -285px;
+}
+
+.tw:hover{
+	background-position:-35px -285px;
+}
+.linkdn:hover{
+	background-position:-155px -285px;
+}
+
+.belowSide{
+	width:auto;
+	background-color: black;
+	position: absolute;
+	top: 650px;
+	
+}
+
+.belowSide a {
+  display:block;
+ cursor: pointer;
+ color:#5F9EA0;
+ font-family: Helvetica;
+ font-size: 20px;
+ font-weight: lighter;
+ text-transform: uppercase;
+ padding: 25px;
+ position:relative;
+}
+
+.homepage:hover{
+	color: white;
+}
+
+.about:hover{
+	color: white;
+}
+
+.services:hover{
+	color: white;
+}
+
+.clients:hover{
+	color: white;
+}
+
+.contacts:hover{
+	color: white;
+}
+.belowSide .below{
+	display: inline-block;
+}
+.content{
+	display:flex;
+	background-color: white;
+	border-bottom: 2px solid #EAEAEA;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.content>div{
+	margin-right: 20px;
+
+}
+/*
+.box{
+	width: 25%;
+	float: left;
+	outline :1px solid black;
+	  word-wrap: break-word;
+	
+}
+
+}
+@media (max-width: 950px;){
+	.box {width:50%;
+	}
+}*/
+.content2{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:10px;
+}
+.wrapper{}
+.content2>div{
+	margin-right: 20px;
+}
+.footer p{
+	text-align: center;
+	padding-top:30px;
+}
+p{
+	font-family: Helvetica;
+	padding:0 20px;
+	text-align: justify;
+}
+.content2 a{
+	display: block;
+	width:150px;
+	height: 50px;
+	background-color: black;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 50px;
+	color:white;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Helvetica;
+	margin-left: 50px;
+}
+
+.content2 a:hover{
+	background-color: gray;
+	color:black;
+}
+h1,h2,h3,h4,h5,h6{
+	padding: 0 10px;
+	font-family: Tahoma;
+	text-align: center;
+}
+
+h1, h2, h3, h4{
+	color:#5F9EA0;
+}
+@media (max-width: 600px){
+	.content2, .content{ flex-direction: column;}
+}
+@media (max-width: 1000px){
+	.wrapper, .belowSide>a{ flex-direction: column;}
+}
+p img{
+	max-width: 100%;
+}
