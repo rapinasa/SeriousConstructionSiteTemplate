@@ -6,14 +6,18 @@ $(document).ready(function(){
     $("#services").mouseenter(function(){
         $("#form1").fadeIn(500);
     });
- 
 });
 $(document).ready(function(){
-       $("#form2").mouseleave(function(){
+       $("#clients").mouseleave(function(){
         $("#form2").fadeOut(500);
     });
-   $("#form1").mouseleave(function(){
+   $("#services").mouseleave(function(){
         $("#form1").fadeOut(500);
     });
-  
+  $(".contacts").mouseover(function(){
+    $("#form3").slideDown("slow");
+  });
+   $(".contacts").mouseleave(function(){
+    $("#form3").slideUp("slow");
+  });
 });

@@ -121,6 +121,7 @@ body { max-width: 1000px;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	z-index: 100;
 }
 .content a{
 	text-decoration: none;
@@ -220,6 +221,14 @@ top:20px;
 
 #form1 a:hover, #form2 a:hover{
 	color: white;
+}
+#form3{
+	display: none;
+	background: gray;
+	opacity: 0.6;
+	color: black;
+	float: left;
+	max-width: 300px;
 }
 
 
